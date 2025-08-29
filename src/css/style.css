@@ -1,0 +1,10 @@
+body, html{
+    background-color: lightgreen;
+}
+
+.navbar {
+    background-color: rgb(93, 139, 93);
+}
+.nav-link{
+    color: white;
+}
