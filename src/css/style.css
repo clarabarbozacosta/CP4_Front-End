@@ -1,10 +1,24 @@
-body, html{
-    background-color: lightgreen;
+body, html {
+    background-color: #A8D5BA;
 }
 
+/* Navbar */
 .navbar {
-    background-color: rgb(93, 139, 93);
+    background-color: #4F7942;
 }
-.nav-link{
+
+/* Páginas na navbar */
+.nav-link {
     color: white;
+    padding: 0 2rem 0 2rem !important;
+}
+
+.nav-link:hover ,.navbar-brand:hover {
+    color: #6AA84F;
+}
+
+/* Logo da EcoTrend */
+.navbar-brand {
+    color: white;
+    padding: 0 1rem 0 2rem;
 }
