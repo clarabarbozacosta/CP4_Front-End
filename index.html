@@ -4,21 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz4fnFO9gybT6aS7g7BzR2gYRA5f6A4yFP4pG9kr0gZ7g6ktXl4gqQq6b6G"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-pzjw8f+ua7Kw1TIq0v8FqfA+0tD+fpL3pFJt33RWvHeOpB8qA9t94Ck5w5XwM5b6"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="src/css/style.css">
     <title>EcoTrend</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="index.html">EcoTrend</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
-            aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-            <span class="navbar-toggler-icon"></span>
+        <nav class="navbar navbar-expand-md">
+
+            <!-- NO LUGAR DO ECOTREND COLOQUEM A LOGO -->
+
+            <a class="navbar-brand" href="#">EcoTrend</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false"
+                aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+
+            <div class="collapse navbar-collapse justify-content-center" id="conteudoNavbarSuportado">
                 <ul class="navbar-nav">
 
                     <li class="nav-item">
@@ -32,13 +45,76 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Itens para casa</a>
                     </li>
-                    
+
                     <li class="nav-item">
                         <a class="nav-link" href="#">Tecnologia verde </a>
                     </li>
-                </ul>
 
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-cart-check"></i> Carrinho
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
+
+    <div class="d-flex flex-column p-3 sidebar" style="width: 30vh; height: 100vh">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            <svg class="bi me-2" width="40" height="32">
+                <use xlink:href="#bootstrap"></use>
+            </svg>
+            <span class="fs-4">Sidebar</span>
+        </a>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+                <a href="#" class="nav-link active" aria-current="page">
+                    <svg class="bi me-2" width="16" height="16">
+                        <use xlink:href="#home"></use>
+                    </svg>
+                    Home
+                </a>
+            </li>
+            <hr>
+            <li>
+                <a href="#" class="nav-link text-white">
+                    <svg class="bi me-2" width="16" height="16">
+                        <use xlink:href="#speedometer2"></use>
+                    </svg>
+                    Roupas e acessórios
+                </a>
+            </li>
+            <hr>
+            <li>
+                <a href="#" class="nav-link text-white">
+                    <svg class="bi me-2" width="16" height="16">
+                        <use xlink:href="#table"></use>
+                    </svg>
+                    Produtos de beleza e cuidados
+                </a>
+            </li>
+            <hr>
+            <li>
+                <a href="#" class="nav-link text-white">
+                    <svg class="bi me-2" width="16" height="16">
+                        <use xlink:href="#grid"></use>
+                    </svg>
+                    Itens para casa
+                </a>
+            </li>
+            <hr>
+            <li>
+                <a href="#" class="nav-link text-white">
+                    <svg class="bi me-2" width="16" height="16">
+                        <use xlink:href="#people-circle"></use>
+                    </svg>
+                    Tecnologia verde
+                </a>
+            </li>
+        </ul>
+    </div>
 </body>
 
 </html>
