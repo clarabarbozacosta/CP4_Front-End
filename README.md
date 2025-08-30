@@ -1,5 +1,3 @@
-# CP4_Front-End
-
 # ✅ Checkpoint – Projeto em Grupo: **EcoTrend**
 
 ## 👩🏻‍💻 Equipe
