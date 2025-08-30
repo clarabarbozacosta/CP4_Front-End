@@ -19,6 +19,7 @@
 
 <body>
     <header>
+
         <nav class="navbar navbar-expand-md">
 
             <!-- NO LUGAR DO ECOTREND COLOQUEM A LOGO -->
@@ -58,62 +59,99 @@
                 </ul>
             </div>
         </nav>
+        </div>
     </header>
 
-    <div class="d-flex flex-column p-3 sidebar" style="width: 30vh; height: 100vh">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-            <svg class="bi me-2" width="40" height="32">
-                <use xlink:href="#bootstrap"></use>
-            </svg>
-            <span class="fs-4">Sidebar</span>
-        </a>
-        <hr>
-        <ul class="nav nav-pills flex-column mb-auto">
-            <li class="nav-item">
-                <a href="#" class="nav-link active" aria-current="page">
-                    <svg class="bi me-2" width="16" height="16">
-                        <use xlink:href="#home"></use>
-                    </svg>
-                    Home
-                </a>
-            </li>
+
+    <!-- SIDEBAR -->
+    <div class="container-principal">
+        <div class="d-flex flex-column p-3 sidebar" style="width: 30vh; height: 100vh">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                <svg class="bi me-2" width="40" height="32">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+                <span class="fs-4">EcoTrend</span>
+            </a>
             <hr>
-            <li>
-                <a href="#" class="nav-link text-white">
-                    <svg class="bi me-2" width="16" height="16">
-                        <use xlink:href="#speedometer2"></use>
-                    </svg>
-                    Roupas e acessórios
-                </a>
-            </li>
-            <hr>
-            <li>
-                <a href="#" class="nav-link text-white">
-                    <svg class="bi me-2" width="16" height="16">
-                        <use xlink:href="#table"></use>
-                    </svg>
-                    Produtos de beleza e cuidados
-                </a>
-            </li>
-            <hr>
-            <li>
-                <a href="#" class="nav-link text-white">
-                    <svg class="bi me-2" width="16" height="16">
-                        <use xlink:href="#grid"></use>
-                    </svg>
-                    Itens para casa
-                </a>
-            </li>
-            <hr>
-            <li>
-                <a href="#" class="nav-link text-white">
-                    <svg class="bi me-2" width="16" height="16">
-                        <use xlink:href="#people-circle"></use>
-                    </svg>
-                    Tecnologia verde
-                </a>
-            </li>
-        </ul>
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active" aria-current="page">
+                        Home
+                    </a>
+                </li>
+                <hr>
+                <li>
+                    <a href="#" class="nav-link text-white">
+                        Roupas e acessórios
+                    </a>
+                </li>
+                <hr>
+                <li>
+                    <a href="#" class="nav-link text-white">
+                        Produtos de beleza e cuidados
+                    </a>
+                </li>
+                <hr>
+                <li>
+                    <a href="#" class="nav-link text-white">
+                        Itens para casa
+                    </a>
+                </li>
+                <hr>
+                <li>
+                    <a href="#" class="nav-link text-white">
+                        Tecnologia verde
+                    </a>
+                </li>
+                <hr>
+                <li>
+                    <a href="#" class="nav-link text-white">
+                        Carrinho
+                    </a>
+                </li>
+                <hr>
+            </ul>
+        </div>
+
+
+        <!-- PRODUTOS -->
+        <div class="conteudo-promocoes">
+            <h1 class="titulos">Promoções</h1>
+            <div class="conteudo">
+                <article>
+                    <div class="grid-cartao">
+                        <img src="img-prod" alt="">
+                        <div class="info-prod">
+                            <h3>Produto 1</h3>
+                            <ul class="detalhes">
+                                <li><img src="icon" alt=""> info</li>
+                                <li><img src="icon" alt=""> info</li>
+                                <li><img src="icon" alt=""> info</li>
+                            </ul>
+                            <div class="preco">
+                                <s>R$ 59,90</s> <strong>R$ 44,90</strong>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="grid-cartao">
+                        <img src="img-prod" alt="">
+                        <div class="info-prod">
+                            <h3>Produto 2</h3>
+                            <ul class="detalhes">
+                                <li><img src="icon" alt="">info</li>
+                                <li><img src="icon" alt="">info</li>
+                                <li><img src="icon" alt="">info</li>
+                            </ul>
+                            <div class="preco">
+                                <s>R$ 59,90</s> <strong>R$ 44,90</strong>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
     </div>
 </body>
 
