@@ -1,101 +1,223 @@
-body, html {
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
     background-color: #A8D5BA;
+    font-family: Arial, sans-serif;
 }
 
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+main {
+    padding-top: 10vh;
+}
+
+/* HEADER */
+header.navbar {
     background-color: #4F7942;
     height: 10vh;
-    
-}
-
-.container-principal {
     display: flex;
-    height: 100vh;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
-
-/* Páginas na navbar */
-.nav-link {
-    color: #F5F5DC;
-    padding: 0 2rem 0 2rem !important;
-    transition: color 0.4s linear;
-}
-
-.nav-link:hover ,.navbar-brand:hover {
-    color: #6AA84F;
-}
-
-/* Logo da EcoTrend */
 .navbar-brand {
     color: #F5F5DC;
     transition: color 0.4s linear;
 }
 
-.d-flex {
-    background-color: #F5F5DC !important;
-    color: #4F7942 !important;
+.navbar-brand:hover {
+    color: #6AA84F;
 }
 
-/* Sidebar */
-.sidebar {
+.navbar-brand img {
+    height: 8vh;
+    width: auto;
+    object-fit: contain;
+}
+
+.nav-link {
+    color: #F5F5DC !important;
+    padding: 0 2rem !important;
+    transition: color 0.4s linear;
+}
+
+.nav-link:hover {
+    color: #6AA84F !important;
+}
+
+form.d-flex input {
+    margin-right: 0.5rem;
+}
+
+/* CARROSSEL */
+#banner .carrossel img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* CONTEÚDO PRINCIPAL */
+.container-principal {
     display: flex;
-    height: 100vh;
-    width: 10vh;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #4F7942 !important;
+    flex-wrap: nowrap;
+    min-height: 100vh;
 }
 
+/* SIDEBAR */
+.sidebar {
+    flex: 0 0 250px;
+    background-color: #F5F5DC;
+    width: 30vh; 
+    height: auto; 
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow-y: auto;
+}
 
-/* Links dentro da sidebar */
 .sidebar a {
     color: #4F7942 !important;
     text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.active {
-    background-color: #A8D5BA !important;
+.sidebar a:hover,
+.sidebar .active {
+    background-color: #A8D5BA;
+    border-radius: 6px;
 }
 
-.conteudo {
+/* PRODUTOS / CARDS */
+.conteudo-promocoes {
     flex: 1;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem; 
+    padding: 1rem 2rem;
 }
 
-
-.grid-cartao {
-    margin-top: 1rem;
-    margin-left: 1rem;
-    height: 35vh;
-    overflow: hidden;
-    border: 1px solid #F5F5DC;
-    border-radius: 12px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    padding: 1rem;
-    background-color: #F5F5DC;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
 
 
 .titulos {
     font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 1rem !important; /* Espaço entre o título e os cartões */
-    margin: 1rem 0 0 2rem;
+    margin-bottom: 1rem;
 }
 
-.conteudo-promocoes {
-    flex: 1;
+.conteudo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+
+.grid-cartao {
+    flex: 1 1 calc(33.333% - 1rem);
     display: flex;
-    flex-direction: column; /* título em cima, cartões embaixo */
-    padding: 1rem 2rem;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 12px;
+    border: 1px solid #F5F5DC;
+    background-color: #F5F5DC;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.grid-cartao:hover {
+    transform: translateY(-5px);
+}
+
+.grid-cartao img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.info-prod h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.info-prod .detalhes {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.preco {
+    margin-top: 0.5rem;
+}
+
+.preco s {
+    color: #999;
+    margin-right: 0.5rem;
+}
+
+.preco strong {
+    color: #4F7942;
+}
+
+/* FOOTER */
+footer {
+    height: 12vh;
+}
+
+footer.navbar {
+    background-color: #4F7942;
+    color: #F5F5DC;
+    padding: 0;
+}
+
+footer h6 {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #F5F5DC;
+    font-size: 16px;
+}
+
+footer a {
+    color: #F5F5DC;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 14px;
+}
+
+footer a:hover {
+    color: #6AA84F;
+}
+
+footer .text-center {
+    background-color: #333;
+    color: #F5F5DC;
+    padding: 0.5rem 0;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 992px) {
+    .container-principal {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        overflow-x: auto;
+    }
+
+    .grid-cartao {
+        flex: 1 1 calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 576px) {
+    .grid-cartao {
+        flex: 1 1 100%;
+    }
 }

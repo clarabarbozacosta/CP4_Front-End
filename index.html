@@ -5,154 +5,208 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz4fnFO9gybT6aS7g7BzR2gYRA5f6A4yFP4pG9kr0gZ7g6ktXl4gqQq6b6G"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
-        integrity="sha384-pzjw8f+ua7Kw1TIq0v8FqfA+0tD+fpL3pFJt33RWvHeOpB8qA9t94Ck5w5XwM5b6"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="src/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/style.css">
     <title>EcoTrend</title>
+    <link rel="icon" type="image/png" href="/src/img/logoTransparente.png">
 </head>
 
 <body>
-    <header>
 
-        <nav class="navbar navbar-expand-md">
-
-            <!-- NO LUGAR DO ECOTREND COLOQUEM A LOGO -->
-
-            <a class="navbar-brand" href="#">EcoTrend</a>
+    <header class="navbar navbar-expand-md">
+        <nav class="container justify-content-between">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/src/img/logo_transparente_branco.png" alt="EcoTrend">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false"
                 aria-label="Alterna navegação">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-
             <div class="collapse navbar-collapse justify-content-center" id="conteudoNavbarSuportado">
                 <ul class="navbar-nav">
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Roupas e acessórios</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Produtos de beleza e cuidados</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Itens para casa</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Tecnologia verde </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <i class="bi bi-cart-check"></i> Carrinho
-                        </a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/src/pages/produtos.html">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/src/pages/categorias.html">Categorias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/src/pages/contato.html">Contato</a></li>
                 </ul>
             </div>
+            <form class="d-flex">
+                <input class="form-control me-2" type="text" placeholder="Procurar">
+                <button class="btn" type="button">
+                    <img src="/src/img/procurar.png" alt="procurar" style="width:20px;">
+                </button>
+            </form>
+            <a class="navbar-brand" href="#">
+                <img src="/src/img/carrinho.png" alt="Carrinho" style="width:20px;">
+            </a>
+            <a class="navbar-brand" href="#">
+                <img src="/src/img/avatar.png" alt="Usuario" style="width:20px;">
+            </a>
         </nav>
-        </div>
     </header>
 
 
-    <!-- SIDEBAR -->
-    <div class="container-principal">
-        <div class="d-flex flex-column p-3 sidebar" style="width: 30vh; height: 100vh">
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                <svg class="bi me-2" width="40" height="32">
-                    <use xlink:href="#bootstrap"></use>
-                </svg>
-                <span class="fs-4">EcoTrend</span>
-            </a>
-            <hr>
-            <ul class="nav nav-pills flex-column mb-auto">
-                <li class="nav-item">
-                    <a href="#" class="nav-link active" aria-current="page">
-                        Home
-                    </a>
-                </li>
-                <hr>
-                <li>
-                    <a href="#" class="nav-link text-white">
-                        Roupas e acessórios
-                    </a>
-                </li>
-                <hr>
-                <li>
-                    <a href="#" class="nav-link text-white">
-                        Produtos de beleza e cuidados
-                    </a>
-                </li>
-                <hr>
-                <li>
-                    <a href="#" class="nav-link text-white">
-                        Itens para casa
-                    </a>
-                </li>
-                <hr>
-                <li>
-                    <a href="#" class="nav-link text-white">
-                        Tecnologia verde
-                    </a>
-                </li>
-                <hr>
-                <li>
-                    <a href="#" class="nav-link text-white">
-                        Carrinho
-                    </a>
-                </li>
-                <hr>
-            </ul>
-        </div>
+    <main>
+        <section id="banner">
+            <!-- Carrossel do Bootstrap -->
+            <div class="carrossel">
+                <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/src/img/carrossel/carrossel1.jpg" href="#" alt="escovas" class="d-block"
+                                style="width:100%">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/src/img/carrossel/carrossel2.jpg" href="#" alt="sacola" class="d-block"
+                                style="width:100%">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/src/img/carrossel/carrossel3.jpg" href="#" alt="shampoo" class="d-block"
+                                style="width:100%">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </section><br>
 
-
-        <!-- PRODUTOS -->
-        <div class="conteudo-promocoes">
-            <h1 class="titulos">Promoções</h1>
-            <div class="conteudo">
-                <article>
-                    <div class="grid-cartao">
-                        <img src="img-prod" alt="">
-                        <div class="info-prod">
-                            <h3>Produto 1</h3>
-                            <ul class="detalhes">
-                                <li><img src="icon" alt=""> info</li>
-                                <li><img src="icon" alt=""> info</li>
-                                <li><img src="icon" alt=""> info</li>
-                            </ul>
-                            <div class="preco">
-                                <s>R$ 59,90</s> <strong>R$ 44,90</strong>
+        <section id="produtos">
+            <div class="conteudo-promocoes-produtos container">
+                <h1 class="titulos">Promoções</h1>
+                <div class="row g-4">
+                    <div class="col-12 col-sm-6 col-lg-3 d-flex">
+                        <div class="grid-cartao d-flex flex-column h-100">
+                            <img src="/src/img/produtos/bolsa.png" class="img-fluid" alt="bolsa">
+                            <div class="info-prod mt-auto">
+                                <h3>Bolsa de rede</h3>
+                                <div class="preco">
+                                    <s>R$ 59,90</s> <strong>R$ 44,90</strong>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </article>
-                <article>
-                    <div class="grid-cartao">
-                        <img src="img-prod" alt="">
-                        <div class="info-prod">
-                            <h3>Produto 2</h3>
-                            <ul class="detalhes">
-                                <li><img src="icon" alt="">info</li>
-                                <li><img src="icon" alt="">info</li>
-                                <li><img src="icon" alt="">info</li>
-                            </ul>
-                            <div class="preco">
-                                <s>R$ 59,90</s> <strong>R$ 44,90</strong>
+                    <div class="col-12 col-sm-6 col-lg-3 d-flex">
+                        <div class="grid-cartao d-flex flex-column h-100">
+                            <img src="/src/img/produtos/chapeu.png" class="img-fluid" alt="chapeu">
+                            <div class="info-prod mt-auto">
+                                <h3>Chapéu de rede</h3>
+                                <div class="preco">
+                                    <s>R$ 49,90</s> <strong>R$ 32,90</strong>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </article>
+                    <div class="col-12 col-sm-6 col-lg-3 d-flex">
+                        <div class="grid-cartao d-flex flex-column h-100">
+                            <img src="/src/img/produtos/composteira1.png" class="img-fluid" alt="composteira">
+                            <div class="info-prod mt-auto">
+                                <h3>Composteira</h3>
+                                <div class="preco">
+                                    <s>R$ 119,90</s> <strong>R$ 99,90</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 d-flex">
+                        <div class="grid-cartao d-flex flex-column h-100">
+                            <img src="/src/img/produtos/escova1.png" class="img-fluid" alt="escova">
+                            <div class="info-prod mt-auto">
+                                <h3>Escova de dente</h3>
+                                <div class="preco">
+                                    <s>R$ 49,90</s> <strong>R$ 32,90</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><br>
+            <div class="conteudo-promocoes-produtos container">
+                <h1 class="titulos">Produtos</h1>
+                <div class="row g-4">
+                    <div class="col-12 col-sm-6 col-lg-3 d-flex">
+                        <div class="grid-cartao d-flex flex-column h-100">
+                            <img src="/src/img/produtos/escova1.png" class="img-fluid" alt="bolsa">
+                            <div class="info-prod mt-auto">
+                                <h3>Bolsa de rede</h3>
+                                <div class="preco">
+                                    <s>R$ 59,90</s> <strong>R$ 44,90</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 d-flex">
+                        <div class="grid-cartao d-flex flex-column h-100">
+                            <img src="/src/img/produtos/painelsolar.png" class="img-fluid" alt="chapeu">
+                            <div class="info-prod mt-auto">
+                                <h3>Chapéu de rede</h3>
+                                <div class="preco">
+                                    <s>R$ 49,90</s> <strong>R$ 32,90</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 d-flex">
+                        <div class="grid-cartao d-flex flex-column h-100">
+                            <img src="/src/img/produtos/shampooCondicionador.png" class="img-fluid" alt="composteira">
+                            <div class="info-prod mt-auto">
+                                <h3>Composteira</h3>
+                                <div class="preco">
+                                    <s>R$ 119,90</s> <strong>R$ 99,90</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 d-flex">
+                        <div class="grid-cartao d-flex flex-column h-100">
+                            <img src="/src/img/produtos/shampooCondicionador1.png" class="img-fluid" alt="escova">
+                            <div class="info-prod mt-auto">
+                                <h3>Escova de dente</h3>
+                                <div class="preco">
+                                    <s>R$ 49,90</s> <strong>R$ 32,90</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><br>
+        </section>
+
+    </main>
+
+    <footer class="navbar navbar-expand-md">
+        <div class="container justify-content-between">
+            <div>
+                <h6 class="text-light">Links Rápidos</h6>
+                <ul class="list-unstyled">
+                    <li><a href="/index.html" class="text-light text-decoration-none">Página Principal</a></li>
+                    <li><a href="/contato.html" class="text-light text-decoration-none">Contato</a></li>
+                </ul>
+            </div>
+            <div>
+                <h6 class="text-light">Siga-nos</h6>
+                <a href="#" class="text-light me-3"><i class="bi bi-instagram"></i></a>
+            </div>
+            <div>
+                <h6 class="text-light">Políticas</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light text-decoration-none">Política de Privacidade</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Termos de Uso</a></li>
+                </ul>
             </div>
         </div>
+    </footer>
+    <div class="text-center p-2 bg-dark text-light">
+        <small>&copy; 2025 EcoTrend - Todos os direitos reservados</small>
     </div>
+
+
 </body>
 
 </html>
