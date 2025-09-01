@@ -2,7 +2,7 @@
 
 ## 👩🏻‍💻 Equipe
 
-- **Brenda Santos** - RM:
+- **Brenda Santos** - RM: 561258
 - **Clara Barboza Costa** - RM: 561490
 - **Lucas Santana Silva** - RM: 566261
 - **Pedro Henrique Lamin Rodrigues** - RM: 566379 
