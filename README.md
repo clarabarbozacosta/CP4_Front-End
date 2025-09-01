@@ -23,15 +23,8 @@ Na EcoTrend, cada escolha conta. Por meio da educação ambiental, design respon
 
 ### 🎨 Paleta de Cores
 
-- **Cor Principal:** ``  
-- **Cor de Fundo:** ``  
-- **Espaços Negativos:** ``
+- **Cor Principal:** `#A8D5BA, #4F7942`  
+- **Cor de Fundo:** `#A8D5BA`  
 
 ---
 
-### 🖋 Tipografia
-
-- **Títulos (`h1`)**: **  
-- **Subtítulos (`h2` a `h6`)**: **
-
----
