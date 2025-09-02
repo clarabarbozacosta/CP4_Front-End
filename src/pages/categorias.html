@@ -17,22 +17,54 @@
 
     <header class="navbar navbar-expand-md">
         <nav class="container justify-content-between">
+            <!-- Logo -->
             <a class="navbar-brand" href="/index.html">
                 <img src="/src/img/logo_transparente_branco.png" alt="EcoTrend">
             </a>
+
+            <!-- Botão hamburguer -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false"
                 aria-label="Alterna navegação">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-center" id="conteudoNavbarSuportado">
-                <ul class="navbar-nav">
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link" href="/src/pages/produtos.html">Produtos</a></li>
                     <li class="nav-item"><a class="nav-link" href="/src/pages/categorias.html">Categorias</a></li>
                     <li class="nav-item"><a class="nav-link" href="/src/pages/contato.html">Contato</a></li>
                 </ul>
+                <div id="navMobile" class="d-md-none mt-3">
+                    <h5 class="text-success">Filtros</h5>
+                    <label for="preco-mobile" class="form-label">Preço</label>
+                    <select id="preco-mobile" class="form-select mb-3">
+                        <option value="all">Todos</option>
+                        <option value="0-50">Até R$50</option>
+                        <option value="50-100">R$50 a R$100</option>
+                        <option value="100-200">R$100 a R$200</option>
+                        <option value="200+">Acima de R$200</option>
+                    </select>
+
+                    <label for="material-mobile" class="form-label">Material</label>
+                    <select id="material-mobile" class="form-select mb-3">
+                        <option value="all">Todos</option>
+                        <option value="bambu">Bambu</option>
+                        <option value="tecido">Tecido reciclado</option>
+                        <option value="bioplastico">Bioplástico</option>
+                    </select>
+
+                    <hr>
+                    <ul class="nav flex-column">
+                        <li><a href="#" class="nav-link">Roupas e acessórios</a></li>
+                        <li><a href="#" class="nav-link">Produtos de beleza</a></li>
+                        <li><a href="#" class="nav-link">Itens para casa</a></li>
+                        <li><a href="#" class="nav-link">Tecnologia verde</a></li>
+                    </ul>
+                </div>
             </div>
-            <form class="d-flex">
+
+            <!-- Busca e ícones -->
+            <form class="d-flex ms-3">
                 <input class="form-control me-2" type="text" placeholder="Procurar">
                 <button class="btn" type="button">
                     <img src="/src/img/procurar.png" alt="procurar" style="width:20px;">
@@ -46,6 +78,7 @@
             </a>
         </nav>
     </header>
+
 
 
     <main>
@@ -78,79 +111,150 @@
         </section>
 
         <section id="produtos">
-            <!-- Grid de produtos com cartões do Bootstrap -->
-
             <div class="container-principal">
-                <!-- SIDEBAR -->
-                <div class="d-flex flex-column p-3 sidebar" style="width: 30vh; height: 100vh">
+                <div class="d-none d-md-flex flex-column p-3 sidebar">
+                    <div class="filtros mt-3">
+                        <h5 class="mb-3 text-center text-success">Filtros</h5>
+                        <label for="preco-desktop" class="form-label">Preço</label>
+                        <select id="preco-desktop" class="form-select mb-3">
+                            <option value="all">Todos</option>
+                            <option value="0-50">Até R$50</option>
+                            <option value="50-100">R$50 a R$100</option>
+                            <option value="100-200">R$100 a R$200</option>
+                            <option value="200+">Acima de R$200</option>
+                        </select>
+
+                        <!-- Filtro por material -->
+                        <label for="material-desktop" class="form-label">Material</label>
+                        <select id="material-desktop" class="form-select mb-3">
+                            <option value="all">Todos</option>
+                            <option value="bambu">Bambu</option>
+                            <option value="tecido">Tecido reciclado</option>
+                            <option value="bioplastico">Bioplástico</option>
+                        </select>
+                    </div>
                     <ul class="nav nav-pills flex-column mb-auto">
                         <hr>
-                        <li>
-                            <a href="#" class="nav-link text-white">
-                                Roupas e acessórios
-                            </a>
-                        </li>
+                        <li><a href="#" class="nav-link">Roupas e acessórios</a></li>
                         <hr>
-                        <li>
-                            <a href="#" class="nav-link text-white">
-                                Produtos de beleza e cuidados
-                            </a>
-                        </li>
+                        <li><a href="#" class="nav-link">Produtos de beleza e cuidados</a></li>
                         <hr>
-                        <li>
-                            <a href="#" class="nav-link text-white">
-                                Itens para casa
-                            </a>
-                        </li>
+                        <li><a href="#" class="nav-link">Itens para casa</a></li>
                         <hr>
-                        <li>
-                            <a href="#" class="nav-link text-white">
-                                Tecnologia verde
-                            </a>
-                        </li>
+                        <li><a href="#" class="nav-link">Tecnologia verde</a></li>
                         <hr>
                     </ul>
                 </div>
 
                 <!-- PRODUTOS -->
-                <div class="conteudo-promocoes">
-                    <h1 class="titulos">Promoções</h1>
-                    <div class="conteudo">
-                        <article>
-                            <div class="grid-cartao">
-                                <img src="img-prod" alt="">
-                                <div class="info-prod">
-                                    <h3>Produto 1</h3>
-                                    <ul class="detalhes">
-                                        <li><img src="icon" alt=""> info</li>
-                                        <li><img src="icon" alt=""> info</li>
-                                        <li><img src="icon" alt=""> info</li>
-                                    </ul>
-                                    <div class="preco">
-                                        <s>R$ 59,90</s> <strong>R$ 44,90</strong>
+                <section>
+                    <section class="conteudo-pro">
+                        <div class="conteudo-promocoes-produtos container">
+                            <h1 class="titulos">Promoções</h1>
+                            <div class="row g-4">
+                                <div class="col-12 col-sm-6 col-lg-3 d-flex">
+                                    <div class="grid-cartao d-flex flex-column h-100">
+                                        <img src="/src/img/produtos/bolsa.png" class="img-fluid" alt="bolsa">
+                                        <div class="info-prod mt-auto">
+                                            <h3>Bolsa de rede</h3>
+                                            <div class="preco">
+                                                <s>R$ 59,90</s> <strong>R$ 44,90</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-3 d-flex">
+                                    <div class="grid-cartao d-flex flex-column h-100">
+                                        <img src="/src/img/produtos/chapeu.png" class="img-fluid" alt="chapeu">
+                                        <div class="info-prod mt-auto">
+                                            <h3>Chapéu de rede</h3>
+                                            <div class="preco">
+                                                <s>R$ 49,90</s> <strong>R$ 32,90</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-3 d-flex">
+                                    <div class="grid-cartao d-flex flex-column h-100">
+                                        <img src="/src/img/produtos/composteira1.png" class="img-fluid"
+                                            alt="composteira">
+                                        <div class="info-prod mt-auto">
+                                            <h3>Composteira</h3>
+                                            <div class="preco">
+                                                <s>R$ 119,90</s> <strong>R$ 99,90</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-3 d-flex">
+                                    <div class="grid-cartao d-flex flex-column h-100">
+                                        <img src="/src/img/produtos/escova1.png" class="img-fluid" alt="escova">
+                                        <div class="info-prod mt-auto">
+                                            <h3>Escova de dente</h3>
+                                            <div class="preco">
+                                                <s>R$ 49,90</s> <strong>R$ 32,90</strong>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </article>
-                        <article>
-                            <div class="grid-cartao">
-                                <img src="img-prod" alt="">
-                                <div class="info-prod">
-                                    <h3>Produto 2</h3>
-                                    <ul class="detalhes">
-                                        <li><img src="icon" alt="">info</li>
-                                        <li><img src="icon" alt="">info</li>
-                                        <li><img src="icon" alt="">info</li>
-                                    </ul>
-                                    <div class="preco">
-                                        <s>R$ 59,90</s> <strong>R$ 44,90</strong>
+                        </div>
+                    </section><br>
+                    <section class="conteudo-pro">
+                        <div class="conteudo-promocoes-produtos container">
+                            <h1 class="titulos">Produtos</h1>
+                            <div class="row g-4">
+                                <div class="col-12 col-sm-6 col-lg-3 d-flex">
+                                    <div class="grid-cartao d-flex flex-column h-100">
+                                        <img src="/src/img/produtos/ecobag.png" class="img-fluid" alt="Ecobag">
+                                        <div class="info-prod mt-auto">
+                                            <h3>Ecobag</h3>
+                                            <div class="preco">
+                                                <s>R$89,90</s> <strong>R$ 64,90</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-3 d-flex">
+                                    <div class="grid-cartao d-flex flex-column h-100">
+                                        <img src="/src/img/produtos/painelsolar.png" class="img-fluid"
+                                            alt="Painel solar">
+                                        <div class="info-prod mt-auto">
+                                            <h3>Painel solar</h3>
+                                            <div class="preco">
+                                                <s>R$ 249,90</s> <strong>R$ 182,90</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-3 d-flex">
+                                    <div class="grid-cartao d-flex flex-column h-100">
+                                        <img src="/src/img/produtos/shampooCondicionador.png" class="img-fluid"
+                                            alt="Shampoo e condicionador em barra">
+                                        <div class="info-prod mt-auto">
+                                            <h3>Kit higiene em barra</h3>
+                                            <div class="preco">
+                                                <s>R$ 119,90</s> <strong>R$ 99,90</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-3 d-flex">
+                                    <div class="grid-cartao d-flex flex-column h-100">
+                                        <img src="/src/img/produtos/case-madeira.png" class="img-fluid"
+                                            alt="Case para celular feito de madeira">
+                                        <div class="info-prod mt-auto">
+                                            <h3>Case de madeira</h3>
+                                            <div class="preco">
+                                                <s>R$ 89,90</s> <strong>R$ 2,90</strong>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
+                        </div><br>
+                    </section>
+                </section>
         </section>
 
     </main>
