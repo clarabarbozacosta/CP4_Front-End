@@ -15,72 +15,91 @@
 
 <body>
 
-    <header class="navbar navbar-expand-md">
-        <nav class="container justify-content-between">
-            <!-- Logo -->
-            <a class="navbar-brand" href="/index.html">
-                <img src="/src/img/logo_transparente_branco.png" alt="EcoTrend">
-            </a>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4F7942;">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand" href="/index.html">
+                    <img src="/src/img/logo_transparente_branco.png" alt="EcoTrend" style="height: 40px;">
+                </a>
 
-            <!-- Botão hamburguer -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false"
-                aria-label="Alterna navegação">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="/src/pages/produtos.html">Produtos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/src/pages/categorias.html">Categorias</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/src/pages/contato.html">Contato</a></li>
-                </ul>
-                <div id="navMobile" class="d-md-none mt-3">
-                    <h5 class="text-success">Filtros</h5>
-                    <label for="preco-mobile" class="form-label">Preço</label>
-                    <select id="preco-mobile" class="form-select mb-3">
-                        <option value="all">Todos</option>
-                        <option value="0-50">Até R$50</option>
-                        <option value="50-100">R$50 a R$100</option>
-                        <option value="100-200">R$100 a R$200</option>
-                        <option value="200+">Acima de R$200</option>
-                    </select>
+                <!-- Botão Hambúrguer -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                    <label for="material-mobile" class="form-label">Material</label>
-                    <select id="material-mobile" class="form-select mb-3">
-                        <option value="all">Todos</option>
-                        <option value="bambu">Bambu</option>
-                        <option value="tecido">Tecido reciclado</option>
-                        <option value="bioplastico">Bioplástico</option>
-                    </select>
-
-                    <hr>
-                    <ul class="nav flex-column">
-                        <li><a href="#" class="nav-link">Roupas e acessórios</a></li>
-                        <li><a href="#" class="nav-link">Produtos de beleza</a></li>
-                        <li><a href="#" class="nav-link">Itens para casa</a></li>
-                        <li><a href="#" class="nav-link">Tecnologia verde</a></li>
+                <!-- Conteúdo que colapsa -->
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <!-- Links de navegação -->
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/src/pages/produtos.html">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/src/pages/categorias.html">Categorias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/src/pages/contato.html">Contato</a>
+                        </li>
                     </ul>
+
+                    <!-- Filtros Mobile (só aparecem no mobile) -->
+                    <div id="navMobile" class="d-lg-none w-100">
+                        <h5> Filtros</h5>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="preco-mobile" class="form-label"> Preço</label>
+                                <select id="preco-mobile" class="form-select mb-3">
+                                    <option value="all">Todos os preços</option>
+                                    <option value="0-50">Até R$50</option>
+                                    <option value="50-100">R$50 a R$100</option>
+                                    <option value="100-200">R$100 a R$200</option>
+                                    <option value="200+">Acima de R$200</option>
+                                </select>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <label for="material-mobile" class="form-label"> Material</label>
+                                <select id="material-mobile" class="form-select mb-3">
+                                    <option value="all">Todos os materiais</option>
+                                    <option value="bambu">Bambu</option>
+                                    <option value="tecido">Tecido reciclado</option>
+                                    <option value="bioplastico">Bioplástico</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <hr style="border-color: #4F7942;">
+                        
+                        <h6 style="color: #4F7942; font-weight: bold;"> Categorias</h6>
+                        <div class="d-flex flex-column gap-1">
+                            <a href="#" class="nav-link"> Roupas e acessórios</a>
+                            <a href="#" class="nav-link"> Produtos de beleza</a>
+                            <a href="#" class="nav-link"> Itens para casa</a>
+                            <a href="#" class="nav-link"> Tecnologia verde</a>
+                        </div>
+                    </div>
+
+                    <!-- Busca e ícones -->
+                    <div class="header-icons d-flex">
+                        <form class="d-flex me-3">
+                            <input class="form-control me-2" type="text" placeholder="Procurar...">
+                            <button class="btn" type="button">
+                                <i class="bi bi-search text-light"></i>
+                            </button>
+                        </form>
+                        <a class="navbar-brand me-2" href="#">
+                            <i class="bi bi-cart3 text-light" style="font-size: 1.3rem;"></i>
+                        </a>
+                        <a class="navbar-brand" href="#">
+                            <i class="bi bi-person-circle text-light" style="font-size: 1.3rem;"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-
-            <!-- Busca e ícones -->
-            <form class="d-flex ms-3">
-                <input class="form-control me-2" type="text" placeholder="Procurar">
-                <button class="btn" type="button">
-                    <img src="/src/img/procurar.png" alt="procurar" style="width:20px;">
-                </button>
-            </form>
-            <a class="navbar-brand" href="#">
-                <img src="/src/img/carrinho.png" alt="Carrinho" style="width:20px;">
-            </a>
-            <a class="navbar-brand" href="#">
-                <img src="/src/img/avatar.png" alt="Usuario" style="width:20px;">
-            </a>
         </nav>
     </header>
-
-
-
     <main>
         <section id="banner">
             <!-- Carrossel do Bootstrap -->
